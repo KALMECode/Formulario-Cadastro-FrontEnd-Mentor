@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+.bg {
+    background-image: url(images/bg-intro-desktop.png);
+}
+
+.container {
+    max-width: 1080px;
+    height: 92vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.widget-left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 46px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+.sub-title {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.widget-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-bx {
+    justify-content: center;
+    text-align: center;
+    width: 520px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 6px;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.137);
+    color: rgba(255, 255, 255, 0.897);
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.signup-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 520px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.137);
+}
+
+form {
+    margin-top: 40px;
+}
+
+input {
+    height: 50px;
+    width: 440px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 30px;
+    border: 1px solid hsla(246, 25%, 77%, 0.356);
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5;
+}
+
+input::placeholder {
+    color: rgb(99, 99, 99);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+.btn {
+    height: 50px;
+    width: 472px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.815);
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+.box-txt {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    font-size: 10px;
+    color: rgba(128, 128, 128, 0.685);
+}
+
+.box-txt a {
+    font-weight: 700;
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+
+.alert-box-nome,
+.alert-box-sobre,
+.alert-box-email,
+.alert-box-senha {
+    display: flex;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    justify-content: flex-end;
+    color: hsl(0, 100%, 74%);
+    font-size: 10px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Poppins';
+}
+
+.alert-icon {
+    background-image: url(/images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 420px 14px;
+}
+
+.error {
+    height: 50px;
+    width: 440px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 30px;
+    border: 2px solid hsl(0, 100%, 74%);
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        overflow: visible;
+        margin: 30px;
+        background-image: url(/images/bg-intro-mobile.png);
+    }
+    .container {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .signup-box,
+    .price-bx {
+        width: 80vw;
+    }
+    input {
+        width: 60vw;
+    }
+    .btn {
+        width: 68vw;
+    }
+    .title {
+        font-size: 2rem;
+        line-height: normal;
+    }
+    .sub-title {
+        font-size: 1rem;
+        margin-bottom: 80px;
+    }
+}
