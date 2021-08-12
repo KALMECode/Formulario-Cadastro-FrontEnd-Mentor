@@ -1,4 +1,4 @@
-<h1>📋 Landing Page - Fylo</h1>
+<h1>📋 Cadastro Page - Front end Mentor</h1>
 <p> 
   Desenvolvi esse projeto com o objetivo de treinar as minhas habilidades em desenvolvimento WEB,<br> especialmente Javascript.
   A landing page foi desenvolvida atráves<br> da ferramenta Flexbox, para alcançar a responsividade em diversos disposítivos.
